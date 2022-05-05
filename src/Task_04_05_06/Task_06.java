@@ -11,11 +11,10 @@ public class Task_06 {
         if (fv == 1) {
             System.out.println("Vyberite edinicu izmereniya: 1 - kg, 2 - funt, 3 - pud");
             int ei = in.nextInt();
-            if (ei == 1 | ei == 2 | ei == 3) {
-                int eii = ei;
+            if (ei == 1 || ei == 2 || ei == 3) {
                 System.out.println("Vvedite chislo");
                 float c = in.nextFloat();
-                switch (eii) {
+                switch (ei) {
                     case 1:
                         System.out.println(c * 1 + " kg = " + c * 2.2 + " funt = " + c * 0.061 + " pud");
                         break;
@@ -34,11 +33,10 @@ public class Task_06 {
         else if (fv == 2) {
             System.out.println("Vyberite edinicu izmereniya: 1 - metr, 2 - yard, 3 - fut");
             int ei = in.nextInt();
-            if (ei == 1 | ei == 2 | ei == 3) {
-                int eii = ei;
+            if (ei == 1 || ei == 2 || ei == 3) {
                 System.out.println("Vvedite chislo");
                 float c = in.nextFloat();
-                switch (eii) {
+                switch (ei) {
                     case 1:
                         System.out.println(c * 1 + " metr = " + c * 1.09 + " yard = " + c * 3.28 + " fut");
                         break;
@@ -48,6 +46,7 @@ public class Task_06 {
                     case 3:
                         System.out.println(c * 1 + " fut = " + c * 0.3 + " metr = " + c * 0.33 + " yard");
                         break;
+                    default: System.out.println("Vybrana nekorrektnaya edinica izmereniya. Povtorite popytku");
                 }
             }
             else {
